@@ -1,0 +1,316 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  background: #fdfcef;
+}
+
+.header {
+  padding-top: 60px;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+p {
+  margin: 0;
+  line-height: 1.37em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.4em;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+section {
+  padding-top: 120px;
+}
+
+.button {
+  background: #ff6861;
+  border-radius: 100px;
+  color: #ffffff;
+  padding: 22px 70px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  display: block;
+  width: 227px;
+  transition: all 0.5s ease;
+}
+
+.button:hover {
+  background: #88130d;
+}
+
+.logo {
+  margin: 0;
+  display: block;
+} 
+
+.offer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 70px;
+  padding: 0px 10px;
+}
+
+.offer {
+  width: 465px;
+}
+
+
+.text {
+  font-size: 18px;
+  margin: 30px 0px;
+  width: 423px;
+}
+
+.preview {
+  width: 490px;
+  height: 465px;
+  border-radius: 70px;
+}
+
+.digits {
+  display: flex;
+  flex-direction: column;
+  gap: 41px;
+  width: 720px;
+  margin: 70px auto 0 auto;
+}
+
+.digit-item {
+  display: flex;
+  align-items: center;
+}
+
+.digit-item:hover {
+  padding-left: 10px;
+  background: #b31b13;
+  color: #fff;
+  border-radius: 20px
+}
+
+.digit {
+  width: 73px;
+  height: 73px;
+  display: flex;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+
+.digit-wrap {
+  margin-left: 34px;
+}
+.digit-title {
+  font-size: 30px;
+  margin-bottom: 11px;
+}
+
+.practice-wrap {
+  background: linear-gradient(102deg, #fff6df 17.38%, #ffdfde 81.25%);
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  padding: 76px 0 75px 122px;
+}
+@keyframes balling {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.practice-wrap img {
+  animation: 5s linear 0s normal none infinite running balling;
+}
+
+.practice-block {
+  width: 475px;
+}
+
+.practice-title {
+  text-align: left;
+}
+
+.practice-text {
+  margin: 24px 0;
+  width: 371px;
+}
+.ball {
+  width: 400px;
+}
+
+
+.footer {
+  padding: 60px 0;
+  text-align: center;
+  font-size: 15px;
+}
+
+/* Responsive */
+
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+}
+
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+c
+  .container {
+    max-width: 720px;
+  }
+  section {
+    padding-top: 100px;
+  }
+  .offer-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 51px;
+  }
+  .button {
+    margin: 0 auto;
+  }
+  .digits {
+    margin: 40px auto 0 auto;
+  }
+  .preview {
+    width: 430px;
+    height: 430px;
+  }
+  .practice-wrap {
+    flex-direction: column;
+    text-align: center;
+    padding: 70px 144px;
+    gap: 51px;
+  }
+  .practice-title {
+    text-align: center;
+  }
+  .practice-text {
+    margin: 24px auto;
+  }
+  .footer {
+    padding: 60px 0;
+  }
+}
+
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+  section {
+    padding-top: 75px;
+  }
+  .container {
+    max-width: 540px;
+  }
+  .digits {
+    margin-top: 30px;
+    width: auto;
+    gap: 30px;
+  }
+  .digit-wrap {
+    margin-left: 0px;
+  }
+  .car {
+    width: 90px;
+  }
+  .gates {
+    width: 90px;
+  }
+  .digit-item {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Extra small: 0px (320px) - 575px */
+@media (max-width: 575px) {
+  section {
+    padding-top: 50px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  .logo {
+    width: 100px;
+  }
+  .offer-wrapper {
+    margin-top: 50px;
+  }
+  .container {
+    padding: 0 15px;
+  }
+  .digit-wrap {
+    margin-left: 0px;
+  }
+  .digit-title {
+    font-size: 23px;
+  }
+  .offer {
+    width: auto;
+  }
+  .preview {
+    width: 100%;
+    height: auto;
+  }
+  .text {
+    width: auto;
+  }
+  .digit {
+    margin-right: 0;
+  }
+  .ball {
+    width: 201px;
+  }
+  .practice-wrap {
+    padding: 50px 20px;
+  }
+  .practice-block {
+    width: 100%;
+  }
+  .practice-text {
+    width: auto;
+  }
+  .footer {
+    padding: 50px 0;
+  }
+}
